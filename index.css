@@ -1,0 +1,52 @@
+body{
+  background: black;
+}
+
+.clock{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+  border: solid;
+  border-radius: 50%;
+  border-color: white;
+  border-width: 4px;
+  padding: 10px;
+}
+.hand{
+  position: absolute;
+  top: 50%;
+  width: 48%;
+  height: 6px;
+  border-radius: 4px;
+  background: white;
+  transform-origin: 100%;
+  /* transition: all 0.2s; */
+  /* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+  transform: rotate(90deg)
+}
+.hour{
+  right: 50%;
+  width: 40%;
+  background: green;
+}
+.min{
+  right: 50%;
+  width: 45%;
+  background: blue;
+}
+.sec{
+  right: 50%;
+  background: red;
+}
+@media (max-width: 400px) {
+  .clock{
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+}
